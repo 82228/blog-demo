@@ -2,25 +2,26 @@
   "name": "my-blog",
   "version": "1.0.0",
   "main": "index.js",
+"devDependencies": {
+  "vitepress": "^1.6.3"
+},
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "test": "echo \"Error: no test specified\" && exit 1",
+  "dev": "npx vitepress dev docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/82228/blog-demo.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "vitepress": "^1.6.3"
+  "bugs": {
+    "url": "https://github.com/82228/blog-demo/issues"
   },
-"pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "@algolia/client-search",
-        "search-insights"
-      ]
-    }
-  }
+  "homepage": "https://github.com/82228/blog-demo#readme",
+  "description": ""
 }
