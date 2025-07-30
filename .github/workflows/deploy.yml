@@ -7,8 +7,7 @@ on:
   pull_request:
     branches: [main]
 
-# 支持手动在工作流上触发 workflow
-  workflow_dispatch:
+# 支持手动在工作流上触发 workflow_dispatch:
 
 # 设置时区
 env:
@@ -33,16 +32,17 @@ jobs:
   # 构建任务
   build:
     runs-on: ubuntu-latest
+
     # node 运行版本
     strategy:
       matrix:
         node-version: [20]
+
     steps:
       # 拉取代码
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          # 保留 Git 信息
           fetch-depth: 0
 
       # 设置 Node.js 版本
@@ -51,7 +51,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # 使用最新的 PNPM
+      # 使用最新的 PNM
       # 你也可以指定为具体的版本
       - uses: pnpm/action-setup@v2
         name: Install pnpm
@@ -66,9 +66,7 @@ jobs:
 
         # 构建项目
       - name: Build project
-        run: |
-          echo ${{ github.workspace }}
-          npm build
+        run: npm run build
 
         # 资源拷贝
       - name: Build with Jekyll
