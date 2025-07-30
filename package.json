@@ -10,7 +10,8 @@
   },
   "scripts": {
    "test": "echo \"Error: no test specified\" && exit 1",
-  "dev": "npx vitepress dev docs"
+  "dev": "npx vitepress dev docs",
+  "build": "vitepress build docs"
   },
   "repository": {
     "type": "git",
