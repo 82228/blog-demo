@@ -26,69 +26,33 @@ permissions:
 # 并发控制配置
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
-# 定义执行任务
 jobs:
-  # 构建任务
-  build:
-
+  build-and-deploy:
     runs-on: ubuntu-latest
 
-    # node v20 运行
-    strategy:
-      matrix:
-        node-version: [20]
-
     steps:
-      # 拉取代码
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          # 保留 Git 信息
-          fetch-depth: 0
 
-      # 设置使用 Node.js 版本
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: '20'
+          cache: 'pnpm'
 
-      # 使用 最新的 PNPM
-      # 你也可以指定为具体的版本
-      - uses: pnpm/action-setup@v2
-        name: Install pnpm
-        with:
-          version: latest
-          # version: 9
-          run_install: false
+      - name: Install pnpm
+        run: npm install -g pnpm
 
-        # 安装依赖
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-        # 构建项目
-      - name: Build blog project
-        run: |
-          echo ${{ github.workspace }}
-          pnpm build
+      - name: Build project
+        run: pnpm build
 
-        # 上传构建输出
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./docs/.vitepress/dist
-
-  # 部署任务
-  deploy:
-    environment:
-      name: github-pages
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/.vitepress/dist  # 确保这个路径与上传的构建输出路径一致
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/.vitepress/dist
