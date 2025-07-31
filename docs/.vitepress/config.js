@@ -1,6 +1,6 @@
 const base = "/blog-demo/"; 
 export default {
-   styles: ['/styles/custom.css?v=1'],
+   styles: ['styles/custom.css?v=1'],
    head: [
     ["link", { rel: "icon", href: "/boke.ico" }],
   ],
