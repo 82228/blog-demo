@@ -1,13 +1,13 @@
-const base = "/my-blog/"; 
+const base = "/blog-demo/"; 
 export default {
-   styles: ['/my-blog/styles/custom.css?v=1'],
+   styles: ['/blog-demo/styles/custom.css?v=1'],
    head: [
     ["link", { rel: "icon", href: "/my-blog/boke.ico" }],
   ],
   title: '是乐茵lin的博客',
   description: '是乐茵lin用来写博客的地方',
    themeConfig: {
-    logo: '/my-blog/bcImgs.png',
+    logo: '/blog-demo/bcImgs.png',
     nav: [
       { text: '首页', link: '/' },
       { text: '关于', link: '/about' },
@@ -50,7 +50,7 @@ export default {
       text: 'awesome-front-end-world.',
       tagline: '前端 知识体系地图',
       image: {
-        src: '/my-blog/bclmgs.png', 
+        src: '/blog-demo/bclmgs.png', 
         alt: 'Logo'
       },
       actions: [
