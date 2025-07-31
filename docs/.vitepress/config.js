@@ -5,8 +5,8 @@ export default {
    head: [
     ["link", { rel: "icon", href: "/my-blog/boke.ico" }],
   ],
-  title: '是乐茵lin的博客',
-  description: '是乐茵lin用来写博客的地方',
+  title: '是乐茵lin的知识库',
+  description: '是乐茵lin用来写知识的地方',
    themeConfig: {
     logo: '/blog-demo/bcImgs.png',
     nav: [
@@ -18,6 +18,7 @@ export default {
           { text: "go基础", link: "/golang/go基础/" },
           { text: "go进阶", link: "/golang/go进阶/" },
           { text: "go底层知识", link: "/golang/go底层知识/" },
+          { text: "计算机网络", link: "/golang/计算机网络/" },
         ]
       }
     ],
@@ -36,20 +37,24 @@ export default {
         { text: '介绍', link: '/golang/go底层知识/' },
         { text: 'go底层知识1', link: '/golang/go底层知识/go底层知识1' },
         { text: 'go底层知识2', link: '/golang/go底层知识/go底层知识2' },
-      ]
+      ],
+     '/golang/计算机网络/': [
+        { text: '介绍', link: '/golang/计算机网络/' },
+        { text: 'UDP详解', link: '/golang/计算机网络/UDP详解' },
+      ],
     },
     docFooter: {
       prev: '上一篇',
       next: '下一篇',
     },
    footer: {
-      message: '版权所有 © 2024 是乐茵lin的博客',
+      message: '版权所有 © 2025 是乐茵lin的知识库',
       copyright: 'Released under the MIT License'
     },
    hero: {
-      name: '是乐茵lin的博客',
-      text: 'awesome-front-end-world.',
-      tagline: '前端 知识体系地图',
+      name: '是乐茵lin的知识库',
+      text: 'welcome to knowledge world.',
+      tagline: '后端 知识体系地图',
       image: {
         src: '/blog-demo/bclmgs.png', 
         alt: 'Logo'
