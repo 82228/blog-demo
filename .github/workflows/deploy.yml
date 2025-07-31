@@ -7,7 +7,7 @@ on:
   pull_request:
     branches: [main]
 
-# 支持手动在工作流上触发 workflow_dispatch:
+  # 支持手动在工作流上触发 workflow_dispatch:
 
 # 设置时区
 env:
@@ -51,31 +51,26 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # 使用最新的 PNM
-      # 你也可以指定为具体的版本
-      - uses: pnpm/action-setup@v2
-        name: Install pnpm
-        with:
-          version: latest
-          # version: 9
-          run_install: false
+      # 安装 pnpm
+      - name: Install pnpm
+        run: npm install -g pnpm
 
-        # 安装依赖
+      # 安装依赖
       - name: Install dependencies
-        run: npm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
-        # 构建项目
+      # 构建项目
       - name: Build project
-        run: npm run build
+        run: pnpm build
 
-        # 资源拷贝
+      # 资源拷贝
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./docs/.vitepress/dist
           destination: ./_site
 
-        # 上传 _site 的资源，用于后续部署
+      # 上传 _site 的资源，用于后续部署
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
@@ -90,3 +85,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site  # 确保这个路径与上传的构建输出路径一致
