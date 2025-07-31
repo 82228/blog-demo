@@ -52,13 +52,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
 
-      # 使用 最新的 PNPM
-      - uses: pnpm/action-setup@v2
-        name: Install pnpm
-        with:
-          version: latest
-          run_install: false
+      # 安装 pnpm
+      - name: Install pnpm
+        run: npm install -g pnpm
 
       # 安装依赖
       - name: Install dependencies
@@ -66,9 +64,7 @@ jobs:
 
       # 构建项目
       - name: Build blog project
-        run: |
-          echo ${{ github.workspace }}
-          pnpm build
+        run: pnpm build
 
       # 上传构建输出
       - name: Upload artifact
