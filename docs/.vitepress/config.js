@@ -1,5 +1,6 @@
-const base = "/blog-demo/"; 
+
 export default {
+   base :  "/blog-demo/",
    styles: ['/blog-demo/styles/custom.css?v=1'],
    head: [
     ["link", { rel: "icon", href: "/my-blog/boke.ico" }],
