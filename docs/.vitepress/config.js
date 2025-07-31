@@ -1,4 +1,4 @@
-const base = "/"; 
+const base = "/vitepress/blog-demo/"; 
 export default {
    styles: ['/blog-demo/styles/custom.css?v=1'],
    head: [
