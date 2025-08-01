@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: 是乐茵lin的博客
-  text: Welcome to the world of golang.
+  name: 是乐茵lin的知识库
+  text: Welcome to the world of knowledge.
   tagline: 后端Golang 知识体系地图
   image:
     src: /boke.png
