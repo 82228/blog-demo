@@ -25,8 +25,8 @@ export default {
    sidebar: {
       '/golang/go基础/': [
         { text: '介绍', link: '/golang/go基础/' },
-        { text: 'go基础1', link: '/golang/go基础/go基础1' },
-        { text: 'go基础2', link: '/golang/go基础/go基础2' },
+        { text: '切片', link: '/golang/go基础/切片' },
+        { text: 'map', link: '/golang/go基础/map' },
       ],
       '/golang/go进阶/': [
         { text: '介绍', link: '/golang/go进阶/' },
@@ -35,8 +35,8 @@ export default {
       ],
       '/golang/go底层知识/': [
         { text: '介绍', link: '/golang/go底层知识/' },
-        { text: 'go底层知识1', link: '/golang/go底层知识/内存逃逸' },
-        { text: 'go底层知识2', link: '/golang/go底层知识/GC' },
+        { text: '内存逃逸', link: '/golang/go底层知识/内存逃逸' },
+        { text: 'GC', link: '/golang/go底层知识/GC' },
       ],
      '/golang/计算机网络/': [
         { text: '介绍', link: '/golang/计算机网络/' },
