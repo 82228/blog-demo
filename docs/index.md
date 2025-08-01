@@ -14,7 +14,7 @@ hero:
       link: /golang/go基础
     - theme: alt
       text: View on GitHub
-      link: https://github.com/vuejs/vitepress
+      link: https://github.com/82228/blog-demo
 ---
 
 <style>
