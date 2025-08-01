@@ -35,8 +35,8 @@ export default {
       ],
       '/golang/go底层知识/': [
         { text: '介绍', link: '/golang/go底层知识/' },
-        { text: 'go底层知识1', link: '/golang/go底层知识/go底层知识1' },
-        { text: 'go底层知识2', link: '/golang/go底层知识/go底层知识2' },
+        { text: 'go底层知识1', link: '/golang/go底层知识/内存逃逸' },
+        { text: 'go底层知识2', link: '/golang/go底层知识/GC' },
       ],
      '/golang/计算机网络/': [
         { text: '介绍', link: '/golang/计算机网络/' },
