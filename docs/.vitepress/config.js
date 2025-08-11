@@ -18,6 +18,7 @@ export default {
           { text: "go基础", link: "/golang/go基础/" },
           { text: "go进阶", link: "/golang/go进阶/" },
           { text: "go底层知识", link: "/golang/go底层知识/" },
+          { text: "mysql", link: "/golang/mysql/" },
           { text: "计算机网络", link: "/golang/计算机网络/" },
         ]
       }
@@ -41,6 +42,10 @@ export default {
      '/golang/计算机网络/': [
         { text: '介绍', link: '/golang/计算机网络/' },
         { text: 'UDP详解', link: '/golang/计算机网络/UDP详解' },
+      ],
+     '/golang/mysql/': [
+        { text: '介绍', link: '/golang/mysql/' },
+        { text: 'mysql', link: '/golang/mysql/执行一条select语句的过程' },
       ],
     },
     docFooter: {
