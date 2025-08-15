@@ -23,13 +23,13 @@ export default {
       {
         text: 'mysql',
         items: [
-          { text: "mysql", link: "/mysql/" },
+          { text: "mysql", link: "/golang/mysql/" },
         ]
       },
       {
         text: '计算机知识',
         items: [
-          { text: "计算机知识", link: "/计算机知识/" },
+          { text: "计算机知识", link: "/golang/计算机知识/" },
         ]
       }
     ],
@@ -50,7 +50,7 @@ export default {
         { text: 'GC', link: '/golang/go底层知识/GC' },
       ],
       '/mysql/': [
-        { text: '介绍', link: '/mysql/' },
+        { text: '介绍', link: '/golang/mysql/' },
         { text: '执行一条select语句的过程', link: '/golang/mysql/执行一条select语句的过程' },
       ],
       '/计算机知识/': [
