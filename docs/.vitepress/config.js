@@ -21,6 +21,18 @@ export default {
           { text: "mysql", link: "/golang/mysql/" },
           { text: "计算机网络", link: "/golang/计算机网络/" },
         ]
+      },
+     {
+        text: 'mysql',
+        items: [
+          { text: "mysql", link: "/golang/mysql/" },
+        ]
+      },
+      {
+        text: '计算机网络',
+        items: [
+          { text: "计算机网络", link: "/golang/计算机网络/" },
+        ]
       }
     ],
    sidebar: {
