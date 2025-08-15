@@ -18,8 +18,6 @@ export default {
           { text: "go基础", link: "/golang/go基础/" },
           { text: "go进阶", link: "/golang/go进阶/" },
           { text: "go底层知识", link: "/golang/go底层知识/" },
-          { text: "mysql", link: "/golang/mysql/" },
-          { text: "计算机网络", link: "/golang/计算机网络/" },
         ]
       },
      {
@@ -51,7 +49,16 @@ export default {
         { text: '内存逃逸', link: '/golang/go底层知识/内存逃逸' },
         { text: 'GC', link: '/golang/go底层知识/GC' },
       ],
-    },
+      '/mysql/': [
+     { text: '介绍', link: '/mysql/' },
+     { text: '执行一条select语句的过程', link: '/mysql/执行一条select语句的过程' },
+      ],
+     '/计算机知识/': [
+    { text: '介绍', link: '/计算机知识/' },
+    { text: 'UDP详解', link: '/计算机知识/UDP详解' },
+    { text: '进程&线程&协程', link: '/计算机知识/进程&线程&协程' },
+  ],
+     },
     docFooter: {
       prev: '上一篇',
       next: '下一篇',
