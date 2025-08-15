@@ -51,12 +51,12 @@ export default {
       ],
       '/mysql/': [
         { text: '介绍', link: '/mysql/' },
-        { text: '执行一条select语句的过程', link: '/mysql/执行一条select语句的过程' },
+        { text: '执行一条select语句的过程', link: '/golang/mysql/执行一条select语句的过程' },
       ],
       '/计算机知识/': [
-        { text: '介绍', link: '/计算机知识/' },
-        { text: 'UDP详解', link: '/计算机知识/UDP详解' },
-        { text: '进程&线程&协程', link: '/计算机知识/进程线程协程' },
+        { text: '介绍', link: '/golang/计算机知识/' },
+        { text: 'UDP详解', link: '/golang/计算机知识/UDP详解' },
+        { text: '进程&线程&协程', link: '/golang/计算机知识/进程线程协程' },
       ]
     },
    footer: {
