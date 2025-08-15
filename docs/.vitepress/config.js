@@ -29,9 +29,9 @@ export default {
         ]
       },
       {
-        text: '计算机网络',
+        text: '计算机知识',
         items: [
-          { text: "计算机网络", link: "/golang/计算机网络/" },
+          { text: "计算机知识", link: "/golang/计算机知识/" },
         ]
       }
     ],
