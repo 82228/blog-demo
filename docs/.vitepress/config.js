@@ -20,20 +20,20 @@ export default {
           { text: "go底层知识", link: "/golang/go底层知识/" },
         ]
       },
-     {
+      {
         text: 'mysql',
         items: [
-          { text: "mysql", link: "/golang/mysql/" },
+          { text: "mysql", link: "/mysql/" },
         ]
       },
       {
         text: '计算机知识',
         items: [
-          { text: "计算机知识", link: "/golang/计算机知识/" },
+          { text: "计算机知识", link: "/计算机知识/" },
         ]
       }
     ],
-   sidebar: {
+    sidebar: {
       '/golang/go基础/': [
         { text: '介绍', link: '/golang/go基础/' },
         { text: '切片', link: '/golang/go基础/切片' },
@@ -50,19 +50,16 @@ export default {
         { text: 'GC', link: '/golang/go底层知识/GC' },
       ],
       '/mysql/': [
-     { text: '介绍', link: '/mysql/' },
-     { text: '执行一条select语句的过程', link: '/mysql/执行一条select语句的过程' },
+        { text: '介绍', link: '/mysql/' },
+        { text: '执行一条select语句的过程', link: '/mysql/执行一条select语句的过程' },
       ],
-     '/计算机知识/': [
-    { text: '介绍', link: '/计算机知识/' },
-    { text: 'UDP详解', link: '/计算机知识/UDP详解' },
-    { text: '进程&线程&协程', link: '/计算机知识/进程&线程&协程' },
-  ],
-     },
-    docFooter: {
-      prev: '上一篇',
-      next: '下一篇',
-    },
+      '/计算机知识/': [
+        { text: '介绍', link: '/计算机知识/' },
+        { text: 'UDP详解', link: '/计算机知识/UDP详解' },
+        { text: '进程&线程&协程', link: '/计算机知识/进程线程协程' },
+      ]
+    }
+}
    footer: {
       message: '版权所有 © 2025 是乐茵lin的知识库',
       copyright: 'Released under the MIT License'
