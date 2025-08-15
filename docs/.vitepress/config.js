@@ -58,8 +58,7 @@ export default {
         { text: 'UDP详解', link: '/计算机知识/UDP详解' },
         { text: '进程&线程&协程', link: '/计算机知识/进程线程协程' },
       ]
-    }
-},
+    },
    footer: {
       message: '版权所有 © 2025 是乐茵lin的知识库',
       copyright: 'Released under the MIT License'
