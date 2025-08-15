@@ -51,14 +51,6 @@ export default {
         { text: '内存逃逸', link: '/golang/go底层知识/内存逃逸' },
         { text: 'GC', link: '/golang/go底层知识/GC' },
       ],
-     '/golang/mysql/': [
-        { text: '介绍', link: '/golang/mysql/' },
-        { text: 'mysql执行select语句的过程', link: '/golang/mysql/执行一条select语句的过程' },
-      ],
-     '/golang/计算机网络/': [
-        { text: '介绍', link: '/golang/计算机网络/' },
-        { text: 'UDP详解', link: '/golang/计算机网络/UDP详解' },
-      ],
     },
     docFooter: {
       prev: '上一篇',
